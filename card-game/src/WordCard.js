@@ -24,6 +24,7 @@ export default class WordCard extends Component {
         if(guess.length == this.state.chars.length){
         if(guess.join('').toString() == this.state.word){
         this.setState({guess: [], completed: true})
+        alert("Complete!!");
         }else{
         this.setState({guess: [], attempt: this.state.attempt + 1})
         }
