@@ -9,6 +9,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="App">
+          <div className="App-header">
+            <h2>Word Games</h2>
+          </div>
+        </div>
         <WordCard value={word}/>
       </div>
     );
