@@ -6,6 +6,9 @@ import WordCard from './WordCard';
 
 const word = "MOBILE";
 class App extends Component {
+  login(){
+    alert("## Welcome ##")
+}
   render() {
     return (
       <div className="App">
@@ -16,6 +19,7 @@ class App extends Component {
         </div>
         <WordCard value={word}/>
         <img src={logo} className="App-logo" alt="logo"/>
+        <br></br>Name: <input type="string" onBlur={this.onBlur} /><button onClick={this.login}>login</button>
       </div>
     );
   }
