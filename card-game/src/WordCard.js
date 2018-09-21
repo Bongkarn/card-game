@@ -36,6 +36,7 @@ render() {
  <div>
  {Array.from(this.state.chars).map((c,i) => <CharacterCard value={c} key={i} attempt={this.state.attempt} activationHandler={this.activationHandler} />)}
  <p>Round: {this.state.attempt}</p>
+ <p>Bongkarn Jongmee 5910110177</p>
  </div>
 );
 }
