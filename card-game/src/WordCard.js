@@ -27,6 +27,7 @@ export default class WordCard extends Component {
         alert("Complete!!");
         }else{
         this.setState({guess: [], attempt: this.state.attempt + 1})
+        alert("Fail!!");
         }
         }
        }
