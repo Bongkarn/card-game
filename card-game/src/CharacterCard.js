@@ -7,6 +7,12 @@ export default class CharacterCard extends Component {
     active: false,
     }
     }
+
+    componentDidUpdate(prevProps){
+        if(prevProps.attempt != this.props.attempt){
+          this.setState({active: false})
+        }
+    }
    
     activate = () => {
     if(!this.state.active){
