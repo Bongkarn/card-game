@@ -15,6 +15,7 @@ class App extends Component {
           </div>
         </div>
         <WordCard value={word}/>
+        <img src={logo} className="App-logo" alt="logo"/>
       </div>
     );
   }
