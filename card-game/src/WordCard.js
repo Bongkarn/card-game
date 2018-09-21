@@ -23,7 +23,7 @@ export default class WordCard extends Component {
         this.setState({guess})
         if(guess.length == this.state.chars.length){
         if(guess.join('').toString() == this.state.word){
-        this.setState({guess: [], completed: true})
+        this.setState({guess: [], completed: true ,attempt: this.state.attempt + 1})
         alert("Complete!!");
         }else{
         this.setState({guess: [], attempt: this.state.attempt + 1})
@@ -35,6 +35,7 @@ render() {
  return (
  <div>
  {Array.from(this.state.chars).map((c,i) => <CharacterCard value={c} key={i} attempt={this.state.attempt} activationHandler={this.activationHandler} />)}
+ <p>Round: {this.state.attempt}</p>
  </div>
 );
 }
